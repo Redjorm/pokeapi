@@ -4,6 +4,7 @@ import "./css/home.css";
 
 const Home = () => {
   return (
+    
     <div className="home__container">
       <header className="home__header">
         <div className="home__header-red"></div>

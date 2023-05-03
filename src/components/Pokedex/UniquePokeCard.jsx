@@ -76,6 +76,8 @@ const UniquePokeCard = ({ pokemon }) => {
             </ul>
           </div>
         </div>
+
+
         <div className="upoke__stats">
           {pokemon?.stats.map((objStat) => (
             <>
@@ -83,7 +85,7 @@ const UniquePokeCard = ({ pokemon }) => {
                 <p>{objStat.stat.name}</p>
                 <div className="container__stat">
                   <div
-                    className="skills"
+                    className="skills"  key={objStat.stat.url}
                     style={{
                       width: `${objStat.base_stat}%`,
                       backgroundColor: "#383838",
@@ -96,6 +98,8 @@ const UniquePokeCard = ({ pokemon }) => {
             </>
           ))}
         </div>
+
+
       </div>
 
       <div className="upoke__movents">

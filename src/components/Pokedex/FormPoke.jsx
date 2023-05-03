@@ -32,11 +32,11 @@ const FormPoke = ({setFormUrl}) => {
         <button className="formpoke__btn">search</button>
       </form>
       <select onChange={handleChange}>
-        <option value="https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0">AllPokemosns</option>
-        {types?.results.map((type) => (
-          <option key={type.url} value={type.url}>
-            {type.name}
-          </option>
+        <option value="https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0">All Pokemon</option>
+        {types?.results.filter(type => type.name != "shadow" && type.name != "unknown").map((type) => (
+
+            <option key={type.url} value={type.url}>{type.name}</option>    
+
         ))}
       </select>
     </div>
