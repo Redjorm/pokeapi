@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="pokedex__footer-black"></div>
       <div className="pokedex__footer-white"></div>
       <div className="pokedex__footer-ball">
-        <img src="/public/img/background/pokeballFooter.png" alt="" />
+        <img src="/img/background/pokeballFooter.png" alt="" />
       </div>
     </footer>
   );
