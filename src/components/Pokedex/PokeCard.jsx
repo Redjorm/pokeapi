@@ -20,7 +20,13 @@ const PokeCard = ({ url }) => {
   
   <article onClick={handleClick} className={`pokemon border-${pokemon?.types[0].type.name}`}>
       <header className={`pokemon__header bg-${pokemon?.types[0].type.name}`}>
-      <img  className="pokemon__sprite" src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
+      {
+        pokemon
+        ?
+        <img  className="pokemon__sprite" src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
+        :
+        <img  className="pokemon__sprite" src="/img/loading.gif" alt="" />
+      }
       </header>
       <section className="pokemon__body">
         <h3 className={`pokemon__name color-${pokemon?.types[0].type.name}`}>{pokemon?.name}</h3>

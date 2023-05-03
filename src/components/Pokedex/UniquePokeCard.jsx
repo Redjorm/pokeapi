@@ -7,22 +7,32 @@ const UniquePokeCard = ({ pokemon }) => {
   const navigate = useNavigate();
 
   const handleReturn = () => {
-    navigate('/pokedex')
-  }
+    navigate("/pokedex");
+  };
 
   return (
     <div className="upoke__container">
       <Header />
       <div className="upoke__btn">
-        <button onClick={handleReturn} className="upoke__button">return</button>
+        <button onClick={handleReturn} className="upoke__button">
+          return
+        </button>
       </div>
       <div className="upoke__pokemon">
         <header className={`upoke__header bg-${pokemon?.types[0].type.name}`}>
-          <img
-            className="upoke__sprite"
-            src={pokemon?.sprites.other["official-artwork"].front_default}
-            alt=""
-          />
+          {pokemon ? (
+            <img
+              className="upoke__sprite"
+              src={pokemon?.sprites.other["official-artwork"].front_default}
+              alt=""
+            />
+          ) : (
+            <img
+              className="upoke__sprite"
+              src="/img/loading.gif"
+              alt=""
+            />
+          )}
         </header>
         <div className="upoke__info">
           <span className="upoke_id">#{pokemon?.id}</span>
