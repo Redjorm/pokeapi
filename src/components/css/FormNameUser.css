@@ -1,0 +1,22 @@
+.form__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form__name-btn {
+    width: 60px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: transform 200ms ease;
+}
+
+.form__name-btn:hover {
+    transform: scale(1.05);
+    filter: brightness(1.15);
+}

@@ -1,0 +1,48 @@
+.pagination{
+    width: 200px;
+    margin-bottom: 2rem;
+    user-select: none;
+}
+
+.options{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pagination__input{
+    width: 20px;
+    border: 0px solid;
+    user-select: none;
+}
+
+.p__pagination{
+    width: 50px;
+}
+
+.btn_pagination-pre{
+    background-color: black;
+    color: white;
+    height: 25px;
+    border-radius: 0.5rem 0 0 0.5rem;
+    transition: transform 200ms ease;
+}
+
+.btn_pagination-next{
+    background-color: black;
+    color: white;
+    height: 25px;
+    border-radius: 0 0.5rem 0.5rem 0;
+    transition: transform 200ms ease;
+}
+
+.btn_pagination-pre:hover {
+    transform: scale(1.10);
+    filter: brightness(1.15);
+}
+
+.btn_pagination-next:hover {
+    transform: scale(1.10);
+    filter: brightness(1.15);
+}

@@ -1,0 +1,526 @@
+.upoke__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upoke__btn{
+    margin-top: 1rem;
+}
+
+.upoke__button{
+    background-color: black;
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+    height: 30px;
+    width: 60px;
+    border-radius: 0.5rem;
+    transition: transform 200ms ease;
+}
+
+.upoke__button:hover{
+    transform: scale(1.10);
+    filter: brightness(1.2);
+}
+
+.upoke__pokemon {
+    margin-top: 1rem;
+    padding: 0.5em;
+    max-width: 310px;
+    width: 100%;
+    border-radius: 0.2em;
+    overflow: hidden;
+    border: 0.1em solid rgb(155, 154, 154);
+    transition: transform 200ms ease;
+}
+
+.upoke__header {
+    background-color: rgb(180, 180, 180);
+    height: 60px;
+    position: relative;
+}
+
+.upoke__sprite {
+    width: 110px;
+    height: 110px;
+    top: -4px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    user-select: none;
+    transition: width 200ms ease;
+}
+
+.upoke__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+    gap: 0.5rem;
+}
+
+.upoke_id {
+    padding: 0.2em;
+    border-radius: 0.2em;
+    font-size: 1.2em;
+    color: black;
+    border: 1px solid rgb(180, 180, 180);
+    text-align: center;
+}
+
+.upoke_name {
+    font-size: 1.6em;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: rgb(53, 53, 53);
+}
+
+.upoke_ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.upoke_li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.upoke_li-label {
+    font-size: 0.7em;
+    font-weight: bold;
+    color: rgb(107, 107, 107);
+}
+
+.upoke_li-info {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.upoke__features {
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    text-align: center;
+}
+
+.upoke__types {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.upoke__type-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.upoke__type-li {
+    background-color: red;
+    padding: 0.1em;
+    border-radius: 0.1em;
+    color: white;
+    font-weight: bold;
+    width: 80px;
+}
+
+.upoke__abilities {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.upoke__abilities-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.upoke__abilities-li {
+    border: 1px solid black;
+    padding: 0.1em;
+    border-radius: 0.1em;
+    color: black;
+    font-weight: 600;
+}
+
+.container__stat {
+    width: 64%;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white;
+    user-select: none;
+}
+
+
+.upoke__movents {
+    margin-top: 2rem;
+    padding: 2rem;
+    max-width: 310px;
+    width: 100%;
+    border-radius: 0.2em;
+    overflow: hidden;
+    border: 0.1em solid rgb(155, 154, 154);
+    transition: transform 200ms ease;
+}
+
+.upoke__total {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.movement{
+    border: 1px solid rgb(145, 145, 145);
+    padding: 0.3em;
+    border-radius: 0.2em;
+    background-color: rgb(233, 232, 232);
+}
+
+@media (min-width: 768px) {
+    .upoke__pokemon {
+        max-width: 700px;
+    }
+
+    .upoke__type-ul {
+        flex-direction: row;
+    }
+
+    .upoke__abilities-ul {
+        flex-direction: row;
+    }
+
+    .upoke__movents {
+        max-width: 700px;
+    }
+}
+
+
+
+/* TYPE FIRE */
+.bg-fire {
+    background-image: url("/public/img/background/fire.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+}
+
+.color__li-fire {
+    background-color: #ff4422;
+}
+
+.border-fire {
+    color: #ff4422;
+}
+
+
+/* TYPE WATER */
+.bg-water {
+    background-image: url("/public/img/background/water.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+}
+
+.color__li-water {
+    background-color: #3399ff;
+}
+
+.border-water {
+    color: #3399ff;
+}
+
+/* TYPE GRASS */
+.bg-grass {
+    background-image: url("/public/img/background/grass.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+}
+
+.color__li-grass {
+    background-color: #77cc55;
+}
+
+.border-grass {
+    color: #77cc55;
+}
+
+
+/* TYPE bug */
+.bg-bug {
+    background-image: url("/public/img/background/bug.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+}
+
+.color__li-bug {
+    background-color: #77cc55;
+}
+
+.border-bug {
+    color: #77cc55;
+}
+
+
+/* TYPE normal */
+.bg-normal {
+    background-image: url("/public/img/background/normal.webp");
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+}
+
+.color__li-normal {
+    background-color: #acac9b;
+}
+
+.border-normal {
+    color: #acac9b;
+}
+
+/* TYPE poison */
+.bg-poison {
+    background-image: url("/public/img/background/posion.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+}
+
+.color__li-poison {
+    background-color: #aa5699;
+}
+
+.border-poison {
+    color: #aa5699;
+}
+
+
+/* TYPE electric */
+.bg-electric {
+    background-image: url("/public/img/background/electric.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+}
+
+.color__li-electric {
+    background-color: #ffcc33;
+}
+
+.border-electric {
+    color: #ffcc33;
+}
+
+
+/* TYPE ground */
+.bg-ground {
+    background-image: url("/public/img/background/gound.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+}
+
+.color__li-ground {
+    background-color: #ddbb55;
+}
+
+.border-ground {
+    color: #ddbb55;
+}
+
+
+/* TYPE fairy */
+.bg-fairy {
+    background-image: url("/public/img/background/fairy.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+}
+
+.color__li-fairy {
+    background-color: #ee99ee;
+}
+
+.border-fairy {
+    color: #ee99ee;
+}
+
+
+/* TYPE fighting*/
+.bg-fighting {
+    background-image: url("/public/img/background/fight.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+}
+
+.color__li-fighting {
+    background-color: #bb5544;
+}
+
+.border-fighting {
+    color: #bb5544;
+}
+
+
+/* TYPE psychic*/
+.bg-psychic {
+    background-image: url("/public/img/background/psychic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+}
+
+.color__li-psychic {
+    background-color: #ff5599;
+}
+
+.border-psychic {
+    color: #ff5599;
+}
+
+
+/* TYPE rock*/
+.bg-rock {
+    background-image: url("/public/img/background/rock.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+}
+
+.color__li-rock {
+    background-color: #bbaa66;
+}
+
+.border-rock {
+    color: #bbaa66;
+}
+
+/* TYPE ghost*/
+.bg-ghost {
+    background-image: url("/public/img/background/ghost.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+}
+
+.color__li-ghost {
+    background-color: #6666bb;
+}
+
+.border-ghost {
+    color: #6666bb;
+}
+
+/* TYPE ice*/
+.bg-ice {
+    background-image: url("/public/img/background/ice.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+}
+
+.color__li-ice {
+    background-color: #66ccff;
+}
+
+.border-ice {
+    color: #66ccff;
+}
+
+
+/* TYPE dragon*/
+.bg-dragon {
+    background-image: url("/public/img/background/dragon.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+}
+
+.color__li-dragon {
+    background-color: #7766ee;
+}
+
+.border-dragon {
+    color: #7766ee;
+}
+
+
+/* TYPE dark*/
+.bg-dark {
+    background-image: url("/public/img/background/dark.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+}
+
+.color__li-dark {
+    background-color: #775544;
+}
+
+.border-dark {
+    color: #775544;
+}
+
+/* TYPE steel*/
+.bg-steel {
+    background-image: url("/public/img/background/steel.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+}
+
+.color__li-steel {
+    background-color: #aaaabb;
+}
+
+.border-steel {
+    color: #aaaabb;
+}
+
+/* TYPE flying*/
+.bg-flying {
+    background-image: url("/public/img/background/fliying.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+}
+
+.color__li-flying {
+    background-color: #8899ff;
+}
+
+.border-flying {
+    color: #8899ff;
+}
